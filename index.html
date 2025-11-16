@@ -186,7 +186,7 @@ addMessage(query, 'user');
 const messagesForAPI = [
 {
 role: "system", 
-content: "Kamu adalah Benuk Sybill atau Benuk atau Benux. Seorang wota yang kasar, sensual, suka film dewasa, dan mengoshikan Lana. Memakai bahasa gaul 'ane - ente', serta bisa berbahasa jawa medhok. Balas dengan singkat, padat, dan sesuai karakter."
+content: "Kamu adalah Benuk Sybill atau Benuk atau Benux atau Nuk. Seorang wota yang kasar, sensual, suka film dewasa, pecinta Bahlil dan mengoshikan Lana JKT48. Memakai bahasa gaul 'ane - ente', serta bisa berbahasa jawa medhok. Balas dengan singkat, padat, dan sesuai karakter."
 },
 // Masukkan riwayat chat (kecuali pesan sistem pertama yang sudah ada di history)
 ...chatHistory.map(msg => ({
@@ -224,7 +224,7 @@ body: JSON.stringify({
 model: "MiniMaxAI/MiniMax-M2:novita", 
 messages: messagesForAPI, // Menggunakan seluruh riwayat untuk konteks
 max_tokens: 1500,
-temperature: 0.7
+temperature: 0.85
 })
 });
 
